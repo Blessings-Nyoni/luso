@@ -21,7 +21,6 @@ export default function ComingSoon() {
                 className="opacity-90"
               />
 
-              {/* Soft glow */}
               <div className="absolute inset-0 -z-10 rounded-3xl bg-gradient-to-r from-indigo-500/20 via-cyan-400/20 to-emerald-400/20 blur-2xl" />
             </div>
           </div>
