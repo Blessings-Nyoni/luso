@@ -25,13 +25,6 @@ export default function ComingSoon() {
             </div>
           </div>
 
-          {/* Brand name */}
-          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
-            <span className="bg-gradient-to-r from-indigo-400 via-cyan-400 to-emerald-400 bg-clip-text text-transparent">
-              Luso
-            </span>
-          </h1>
-
           {/* Tagline */}
           <p className="text-xl text-slate-300">
             Hire equipment. Discover specialised skills. Close deals smarter.
