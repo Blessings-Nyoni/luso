@@ -1,77 +1,16 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Search, Briefcase, Truck, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import Header from "@/components/ui/header";
+import Footer from "@/components/ui/footer";
 
-/* ---------------- Header ---------------- */
-const Header = () => (
-  <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
-    <div className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
-      <div className="flex items-center gap-3 cursor-pointer">
-        <Image src="/logo.png" alt="Luso logo" width={100} height={100} />
-      </div>
-
-      <div className="hidden md:flex gap-6 text-slate-600">
-        <a className="hover:text-slate-900 cursor-pointer">Find Equipment</a>
-        <a className="hover:text-slate-900 cursor-pointer">Find Skills</a>
-        <a className="hover:text-slate-900 cursor-pointer">Pricing</a>
-        <a className="hover:text-slate-900 cursor-pointer">How It Works</a>
-      </div>
-
-      <div className="flex items-center gap-3">
-        <a className="text-slate-600 hover:text-slate-900 px-3 py-2 cursor-pointer">
-          Log in
-        </a>
-        <Button className="rounded-xl bg-gradient-to-r from-indigo-500 to-cyan-500 text-white hover:opacity-90 cursor-pointer">
-          Sign up
-        </Button>
-      </div>
-    </div>
-  </nav>
-);
-
-/* ---------------- Footer ---------------- */
-const Footer = () => (
-  <footer className="border-t border-slate-200 py-10 text-slate-500 bg-white">
-    <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-8">
-      <div className="flex items-center gap-3">
-        <Image src="/logo.png" alt="Luso logo" width={64} height={64} />
-        <p className="text-sm max-w-sm">
-          A digital marketplace for hiring equipment and specialised skills.
-        </p>
-      </div>
-
-      <div className="flex gap-10 text-sm">
-        <div className="space-y-2">
-          <div className="font-medium text-slate-700">Platform</div>
-          <a className="block hover:text-slate-900 cursor-pointer">Pricing</a>
-          <a className="block hover:text-slate-900 cursor-pointer">
-            How it works
-          </a>
-        </div>
-        <div className="space-y-2">
-          <div className="font-medium text-slate-700">Account</div>
-          <a className="block hover:text-slate-900 cursor-pointer">Log in</a>
-          <a className="block hover:text-slate-900 cursor-pointer">Sign up</a>
-        </div>
-      </div>
-    </div>
-
-    <div className="text-center text-xs mt-8">
-      © {new Date().getFullYear()} Luso. All rights reserved.
-    </div>
-  </footer>
-);
-
-/* ---------------- Page ---------------- */
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-100 text-slate-900">
       <Header />
-
       {/* Hero */}
       <section className="relative overflow-hidden bg-white">
         <div className="absolute -top-40 -left-40 h-96 w-96 bg-indigo-500/10 rounded-full blur-3xl" />
